@@ -1,0 +1,234 @@
+----item----
+version: 1
+id: {571EF505-C73E-4091-89CB-226D90D423EB}
+database: core
+path: /sitecore/content/Applications/Content Editor/Editors/Templates/Cloning Manager
+parent: {F4F6D030-AD28-4196-B162-6DFD83F4FFCD}
+name: Cloning Manager
+master: {00000000-0000-0000-0000-000000000000}
+template: {A5AACA0D-77C0-4741-AB77-211CFBDD9E5C}
+templatekey: Editor
+
+----field----
+field: {AB8D0102-91F3-43B6-90AA-5A0641DC8521}
+name: Icon
+key: icon
+content-length: 27
+
+Network/16x16/link_view.png
+----field----
+field: {6F371C74-5BD5-4EBD-B10A-FC54716021AE}
+name: Url
+key: url
+content-length: 65
+
+/sitecore modules/shell/Cloning Manager/Controls/CloningInfo.aspx
+----version----
+language: da
+version: 1
+revision: a3746c90-8608-4452-bdae-7a7535be953b
+
+----field----
+field: {F7C42332-728E-48B7-BB3C-0D6883E45628}
+name: Header
+key: header
+content-length: 6
+
+Bygger
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20110720T094335:634467518151039385
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a3746c90-8608-4452-bdae-7a7535be953b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20110720T094335:634467518151039385
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: a9b48c8d-a11f-4fc8-a84f-f8a0c05ccf9a
+
+----field----
+field: {F7C42332-728E-48B7-BB3C-0D6883E45628}
+name: Header
+key: header
+content-length: 7
+
+Builder
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20110720T095047:634467522470368707
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a9b48c8d-a11f-4fc8-a84f-f8a0c05ccf9a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20110720T095047:634467522470368707
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: b72622b0-dcc2-4b38-9927-6d7e9bce9f5b
+
+----field----
+field: {F7C42332-728E-48B7-BB3C-0D6883E45628}
+name: Header
+key: header
+content-length: 15
+
+Cloning Manager
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20070125T113145
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b72622b0-dcc2-4b38-9927-6d7e9bce9f5b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20120401T184521:634689027212579516
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 36d20232-cb2d-40cb-b782-368eb19bb04d
+
+----field----
+field: {F7C42332-728E-48B7-BB3C-0D6883E45628}
+name: Header
+key: header
+content-length: 11
+
+テンプレート ビルダー
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20110720T100218:634467529380701857
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+36d20232-cb2d-40cb-b782-368eb19bb04d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20110720T100218:634467529380701857
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
