@@ -4,7 +4,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5c416a2e-3dcc-41ab-9ba8-b87cce013b2d}</ProjectGuid>
+    <ProjectGuid>{c40e436a-a87b-4321-812c-8a1d02938b88}</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <SourceWebPhysicalPath>..\Website</SourceWebPhysicalPath>
     <SourceWebProject>{dddd2060-579a-48f0-9e6b-34239343d0bb}|Website\Sitecore.SharedSource.CloningManager.csproj</SourceWebProject>
@@ -27,7 +27,7 @@
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
     <SitecoreDeployFolder>C:\inetpub\wwwroot\sitecore641\Website</SitecoreDeployFolder>
     <SitecoreWebUrl>http://sitecore641.local.com</SitecoreWebUrl>
-    <SitecoreAccessGuid>73917a5e-10a7-4760-863c-4654e939f7b8</SitecoreAccessGuid>
+    <SitecoreAccessGuid>ec7b3a09-042b-49ee-bfad-e18b4e2dc011</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -72,7 +72,7 @@
     <SitecoreItem Include="sitecore\content\Applications\Content Editor\Editors\Templates\Cloning Manager.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons.item">
       <Icon>/temp/IconCache/Control/16x16/menu_b.png</Icon>
@@ -84,17 +84,27 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks\Cloning.item">
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks\Cloning Adoption.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks\Cloning\Auto Adopt.item">
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks\Cloning Adoption\Auto Adopt.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks\Cloning\Reject.item">
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks\Cloning Adoption\Reject.item">
+      <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks\Cloning Manager.item">
+      <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Chunks\Cloning Manager\Manager.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -112,7 +122,7 @@
     <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Ribbons\Default\CloningManager.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Strips.item">
       <Icon>/temp/IconCache/Applications/16x16/folder.png</Icon>
@@ -123,6 +133,11 @@
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Strips\Cloning Manager\Adoption.item">
+      <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Applications\Content Editor\Ribbons\Strips\Cloning Manager\Cloning Manager.item">
       <Icon>/temp/IconCache/Applications/32x32/Document.png</Icon>

@@ -19,7 +19,7 @@ clone item help text
 ----version----
 language: en
 version: 1
-revision: fe55eead-a855-4f61-8dbb-2f3fa6502727
+revision: ba620e37-6fd2-4098-930d-3d80c34a3eaa
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fe55eead-a855-4f61-8dbb-2f3fa6502727
+ba620e37-6fd2-4098-930d-3d80c34a3eaa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20120402T133601:634689705618891904
+20120424T141629:634708737894214238
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -67,6 +67,6 @@ sitecore\admin
 field: {2BA3454A-9A9C-4CDF-A9F8-107FD484EB6E}
 name: Phrase
 key: phrase
-content-length: 170
+content-length: 181
 
-<a onclick="javascript:return scForm.postEvent(this,event,'item:load(id={0},la={1},vs={2})')" href="#" style="font-style:italic;">Click here to see the original item.</a>
+<a onclick="javascript:return scForm.postEvent(this,event,'item:load(id={0},language={1},version={2})')" href="#" style="font-style:italic;">Click here to see the original item.</a>

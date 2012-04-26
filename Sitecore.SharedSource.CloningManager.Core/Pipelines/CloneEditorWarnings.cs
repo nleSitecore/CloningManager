@@ -22,8 +22,18 @@ namespace SharedSource.CloningManager.Pipelines
             {
                 Item originalItem = item.Source;
                 if (originalItem != null)
-                    args.Add(Translate.Text("this item is a clone"), Translate.Text("clone item help text", originalItem.ID.ToString(), originalItem.Language.Name, originalItem.Version));
-                //Test(args, item);
+                {
+                    Sitecore.Data.ItemUri uri = new Sitecore.Data.ItemUri(item.SourceUri);
+                    Sitecore.Data.ItemUri uriOrg = new Sitecore.Data.ItemUri(originalItem.Versions.GetLatestVersion());
+                    string versionText = null;
+                    if (uri.Version == uriOrg.Version)
+                        versionText = "<br />Same Version as original Item!";
+                    else
+                        versionText = "Original Item is Version: " + uriOrg.Version + ". This Clone inherits from Version: " + uri.Version;
+                    args.Add(Translate.Text("this item is a clone") + versionText, Translate.Text("clone item help text", originalItem.ID.ToString(), originalItem.Language.Name, originalItem.Version));
+                    
+                }
+                
             }
         }
 
@@ -42,18 +52,18 @@ namespace SharedSource.CloningManager.Pipelines
             return strbuilder;
         }
 
-        private void Test(GetContentEditorWarningsArgs args, Item item)
+        private void Test(GetContentEditorWarningsArgs args, Item item, Item originalItem)
         {
-              List<Sitecore.Data.Clones.Notification> list = new List<Sitecore.Data.Clones.Notification>(item.Database.NotificationProvider.GetNotifications(item));
-             list.AddRange(this.GetAdditionalNotifications(item));
+            List<Sitecore.Data.Clones.Notification> list = new List<Sitecore.Data.Clones.Notification>(item.Database.NotificationProvider.GetNotifications(item));
+            list.AddRange(this.GetAdditionalNotifications(item));
             int num = 5;
             for (int i = 0; i < ((num > list.Count) ? list.Count : num); i++)
             {
                 list[i].RegisterWarnings(args, item);
-            }
-
-            
+            }            
         }
+
+        
 
         protected virtual List<Notification> GetAdditionalNotifications(Item item)
         {

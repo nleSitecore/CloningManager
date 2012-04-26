@@ -39,14 +39,19 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdoptionManager.cs" />
     <Compile Include="Commands\AutoAdopt.cs" />
+    <Compile Include="Commands\ManagerViewer.cs" />
+    <Compile Include="Commands\OnOriginalSave.cs" />
     <Compile Include="Commands\RejectAdoption.cs" />
+    <Compile Include="EventHandler\ItemEventHandler.cs" />
     <Compile Include="Util.cs" />
     <Compile Include="Pipelines\CloneEditorWarnings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

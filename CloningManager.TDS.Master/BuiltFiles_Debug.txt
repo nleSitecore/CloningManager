@@ -3,8 +3,6 @@
 .\Debug\Web.Debug.config
 .\Debug\Web.Release.config
 .\Debug\App_Config\Include\CloningManager.config
-.\Debug\App_Config\Include\AutoAdopt.config
-.\Debug\bin\ComponentArt.UIFramework.lic
 .\Debug\bin\ComponentArt.Web.UI.dll
 .\Debug\bin\HedgehogDevelopment.SitecoreProject.Service.dll
 .\Debug\bin\HtmlAgilityPack.dll
