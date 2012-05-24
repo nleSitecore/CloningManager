@@ -51,7 +51,9 @@
     <Compile Include="Commands\ManagerViewer.cs" />
     <Compile Include="Commands\OnOriginalSave.cs" />
     <Compile Include="Commands\RejectAdoption.cs" />
+    <Compile Include="Data\CloningItem.cs" />
     <Compile Include="EventHandler\ItemEventHandler.cs" />
+    <Compile Include="Pipelines\CloningInfo.cs" />
     <Compile Include="Util.cs" />
     <Compile Include="Pipelines\CloneEditorWarnings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

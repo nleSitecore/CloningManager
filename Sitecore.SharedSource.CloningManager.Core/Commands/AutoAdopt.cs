@@ -40,20 +40,9 @@
         }
 
         protected void DoAdoption(Item item)
-        {
-             Item originalItem = item.Source;
-             if (originalItem != null)
-             {
-                 Sitecore.Data.ItemUri uri = new Sitecore.Data.ItemUri(item.SourceUri);
-                 Sitecore.Data.ItemUri uriOrg = new Sitecore.Data.ItemUri(originalItem.Versions.GetLatestVersion());
-                 if (uri.Version != uriOrg.Version && (item.Database.NotificationProvider != null))
-                 {
-                     foreach (Sitecore.Data.Clones.Notification notification in item.Database.NotificationProvider.GetNotifications(item))
-                     {
-                         notification.Accept(item);                        
-                     }
-                 }
-             }
+        {            
+            AdoptionManager adoptManager = new AdoptionManager(item);
+            adoptManager.DoAdoption();
         }
 
     }

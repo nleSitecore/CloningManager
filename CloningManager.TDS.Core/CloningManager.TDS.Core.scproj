@@ -34,6 +34,10 @@
     <DebugSymbols>false</DebugSymbols>
     <OutputPath>.\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <SitecoreDeployFolder>C:\inetpub\wwwroot\sitecore641\CloningManager.TDS.Core</SitecoreDeployFolder>
+    <SitecoreWebUrl>C:\inetpub\wwwroot\sitecore641\CloningManager.TDS.Core</SitecoreWebUrl>
+    <SitecoreAccessGuid>b1f2e7ad-a533-4524-8e85-cbfb01abb41e</SitecoreAccessGuid>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">

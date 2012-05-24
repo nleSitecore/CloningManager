@@ -38,7 +38,7 @@ namespace SharedSource.CloningManager
                     if (item.ID == link.GetTargetItem().ID)
                     {
                         if (!cloneItems.Exists(element => element.ID == link.GetSourceItem().ID))
-                            cloneItems.Add(link.GetSourceItem());
+                            cloneItems.Add(link.GetSourceItem().Versions.GetLatestVersion());
                     }
                 }
             }

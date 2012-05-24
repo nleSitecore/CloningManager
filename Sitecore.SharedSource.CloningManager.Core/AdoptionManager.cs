@@ -27,6 +27,21 @@ namespace SharedSource.CloningManager
                 _item.Editing.EndEdit();
             }
         }
-
+        public void DoAdoption()
+        {
+            Item originalItem = _item.Source;
+            if (originalItem != null)
+            {
+                Sitecore.Data.ItemUri uri = new Sitecore.Data.ItemUri(_item.SourceUri);
+                Sitecore.Data.ItemUri uriOrg = new Sitecore.Data.ItemUri(originalItem.Versions.GetLatestVersion());
+                if (uri.Version != uriOrg.Version && (_item.Database.NotificationProvider != null))
+                {
+                    foreach (Sitecore.Data.Clones.Notification notification in _item.Database.NotificationProvider.GetNotifications(_item))
+                    {
+                        notification.Accept(_item);
+                    }
+                }
+            }
+        }
     }
 }

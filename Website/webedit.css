@@ -1,0 +1,617 @@
+iframe.scWebEditRibbon {
+  width:100%;
+  display:block;
+  background:white;
+  z-index:9090;
+}
+
+iframe.scCollapsedRibbon {
+  border-bottom: 1px solid #cccccc;
+}
+
+iframe.scFixedRibbon {  
+  position:fixed;
+  top:0px;
+  left:2px;  
+}
+
+iframe.scWebEditContentEditor {
+  border:none;
+  width:100%;
+  height:100%;
+  min-height:600px;
+}
+
+.scWebEditContentEditorButtons {
+  position:absolute;
+}
+
+a.scWebEditContentEditorButton,
+a.scWebEditContentEditorButton:link,
+a.scWebEditContentEditorButton:visited,
+a.scWebEditContentEditorButton:hover,
+a.scWebEditContentEditorButton:active {
+  cursor:default;
+  float:left;
+  border:1px solid white;
+  font:8pt tahoma;
+  color:black;
+  text-decoration:none;
+}
+
+a.scWebEditContentEditorButton:hover,
+a.scWebEditContentEditorButton:active {
+  border:1px solid;
+  border-color: #ddcf9b #c1a877 #dfd8bd #c1a877;
+  background: #ffb70b url(/sitecore/shell/Themes/Standard/Images/RibbonSmallButtonHover.png) repeat-x;
+}
+
+/* ----------------------------*/
+/*        chrome ui            */
+.scChromeData 
+{
+  display: none !important;
+}
+
+div#scFieldValues
+{
+  display: none;
+}
+
+.scClearBoth
+{
+  clear: both;
+}
+
+#scDummyToolbar
+{
+  visibility:hidden;  
+  z-Index: -100;
+  top: 0;
+  left: 0;
+}
+
+/*** Floating toolbar***/
+
+.scChromeControls
+{  
+  position: relative;
+  top:-2px;
+  left: -2px;    
+  padding: 2px 4px;
+  z-index: 9100;
+}
+
+.scChromeControls, .scChromeDropDown
+{
+  background: #F5F5F5;
+  border: solid 1px #606060;
+}
+
+.scChromeControls img
+{
+  border: none;
+}
+
+.scChromeToolbar
+{
+  position: absolute;
+  background: transparent url('/sitecore/shell/themes/standard/images/pageeditor/bg_transparent.png') repeat;
+  z-index: 9100;
+}
+
+div.scChromeControls, div.scChromeToolbar
+{
+  max-height: 49px;    
+}
+
+.scChromeToolbar .scChromeControls a,
+.scChromeToolbar .scChromeControls a:link,
+.scChromeToolbar .scChromeControls a:visited,
+.scChromeToolbar .scChromeControls a:hover,
+.scChromeToolbar .scChromeControls a:active
+{
+  color: #333333;
+  cursor: pointer;
+  font-family: Tahoma,Verdana,Sans-Serif;
+  font-size: 11px !important;
+  font-weight: normal;
+  line-height: normal !important;
+  outline: none;
+  text-decoration: none;   
+}
+
+.scChromeToolbar .scChromeControls span
+{
+  font-family: Tahoma, Verdana,Sans-Serif;
+  line-height: normal !important;
+}
+   
+.scChromeName
+{
+  white-space: nowrap;   
+  margin: 2px 4px 4px 4px; 
+}
+
+.scChromeCommand, .scChromeCommand:link, .scChromeCommand:active 
+{
+  padding: 3px 4px;  
+  float: left;
+  height: 16px;      
+}
+
+.scChromeCommand:hover
+{
+  background: #ffe594 url(/sitecore/shell/Themes/Standard/Images/RibbonSmallButtonHover.png) repeat-x;  
+  padding: 2px 3px;
+  border: 1px solid;
+  border-color: #ddcf9b #d2c08e #ccc2a3 #d2c08e;
+}
+
+a.scChromeCommand.scExpandDropdown
+{
+  padding-left: 1px;
+  padding-right: 0px; 
+}
+
+a.scChromeCommand.scChromeMoreSection
+{
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+a.scChromeCommand.scChromeMoreSection:hover
+{
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.scChromeCommand.scChromeMoreSection img
+{  
+  position: relative;
+  top: 2px;
+}
+
+.scChromeComboButton .scChromeCommand.scExpandDropdown img
+{
+  position: relative;
+  top: 5px;
+}
+
+.scChromeCommandSectionDelimiter
+{
+  font-size: 14px;
+  font-weight: 700;
+  color: #dfdfdf;  
+  padding: 0 4px;
+  float: left;
+  cursor: default; 
+}
+
+.scChromeDropDown
+{  
+  padding: 1px;       
+  z-index: 9400;    
+  position: absolute !important;  
+}
+
+.scChromeDropDown a,
+.scChromeDropDown a:link,
+.scChromeDropDown a:visited,
+.scChromeDropDown a:active
+{
+  color: Black;
+  cursor: pointer;
+  font-family: Tahoma,Verdana,Sans-Serif;
+  font-size: 11px !important;
+  font-weight: normal;
+  line-height: normal !important;
+  outline: none;
+  text-decoration: none;
+}
+
+.scChromeDropDown span
+{
+  line-height: normal !important;
+  font-family: Tahoma, Verdana,Sans-Serif;
+}
+
+.scChromeDropDown img
+{
+  border: none;
+  position: relative;
+  top: 1px;
+}
+
+.scChromeDropDown a.scChromeDropDownRow
+{    
+  display: block;
+  padding: 2px 4px; 
+}
+
+.scChromeDropDown a.scChromeDropDownRow:hover
+{    
+  background: #ffe594 url(/sitecore/shell/Themes/Standard/Images/RibbonSmallButtonHover.png) repeat-x;
+  border: 1px solid;
+  border-color: #ddcf9b #d2c08e #ccc2a3 #d2c08e;
+  padding: 1px 3px;
+}
+
+.scChromeDropDown a.scChromeDropDownRow span
+{  
+  position: relative;
+  bottom: 3px;
+  margin-left: 3px;  
+}
+
+span.scChromeText
+{
+  margin-right:2px;
+  color: #888;  
+  font-size: 11px;
+  font-weight: normal;
+}
+
+span.scChromeCommandText
+{  
+  margin-right:2px;    
+  position:relative;
+  top: 2px;
+}
+
+
+img.scLevelConnection
+{
+  position: relative;
+  top: -8px;
+}
+
+.scAncestorCommands
+{
+  padding-top: 1px;
+}
+
+.scChromeComboButton
+{
+  padding: 1px;
+  float: left;
+}
+  
+.scChromeComboButton .scChromeCommand
+{
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: none;
+}
+
+.scChromeComboButton:hover, .scChromeComboButton.scDdExpanded
+{
+  border: 1px solid;
+  border-color: #ddcf9b #d2c08e #ccc2a3 #d2c08e;
+  background: #ffe594 url(/sitecore/shell/Themes/Standard/Images/Ribbon/SmallButtonActive.png) repeat-x;
+  padding: 0px;
+}
+
+.scChromeComboButton:hover .scChromeCommand
+{
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.scChromeComboButton:hover .scChromeCommand.scExpandDropdown, .scChromeComboButton.scDdExpanded .scChromeCommand.scExpandDropdown
+{
+  border-left: 1px solid #ccc2a3;  
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.scChromeComboButton.scDdExpanded .scChromeCommand.scExpandDropdown, .scChromeMoreSection.scDdExpanded
+{
+   background: #feeb92 url(/sitecore/shell/Themes/Standard/Images/RibbonSmallButtonDown.png) repeat-x left -1px; 
+}
+
+a.scChromeMoreSection.scDdExpanded
+{
+  border: 1px solid;
+  border-color: #d2c08e #d2c08e #ccc2a3 #d2c08e;
+  padding: 2px; 
+}
+
+img.scChromeAncestorIcon
+{
+  position: relative;
+  top: 1px;
+}
+
+/*** END Floating toolbar***/
+
+/*** Chrome frames ***/
+
+.scFrameSideHorizontal
+{
+  position: absolute;
+  z-index: 9050;  
+  height: 1px;  
+  background-color: #4B6996;
+}
+
+.scFrameSideVertical
+{
+  position: absolute;
+  z-index: 9050;  
+  width: 1px;  
+  background-color: #4B6996;
+}
+
+.scHoverFrameSideHorizontal
+{
+  background: #4B6996 url('/sitecore/shell/themes/standard/images/pageeditor/bg_hover_frame_horizontal.png') repeat-x; 
+  position: absolute;
+  z-index: 9000;  
+  height: 1px;
+  
+}
+
+.scHoverFrameSideVertical
+{
+  background: #4B6996 url('/sitecore/shell/themes/standard/images/pageeditor/bg_hover_frame_vertical.png') repeat-y; 
+  position: absolute;
+  z-index: 9000;  
+  width: 1px;
+  
+}
+
+.scHilghlightedChrome
+{
+  opacity: 0.55;
+  filter: alpha(opacity=55);
+}
+
+.scMoveControlSideHorizontal, .scMoveControlSideVertical
+{
+  background-color: #4E4E4E;
+  position: absolute;
+  z-index: 9075;
+}
+
+div.scMoveControlSideHorizontal
+{  
+  height: 8px;
+  background-repeat: repeat-x;
+}
+
+div.scMoveControlSideVertical
+{ 
+  width: 8px;
+  background-repeat: repeat-y;
+}
+
+.scTopSide
+{
+  background-image: url('/sitecore/shell/themes/standard/images/pageeditor/bg_move_control_top.png');
+}
+
+.scBottomSide
+{
+  background-image: url('/sitecore/shell/themes/standard/images/pageeditor/bg_move_control_bottom.png');
+}
+
+.scLeftSide
+{
+  background-image: url('/sitecore/shell/themes/standard/images/pageeditor/bg_move_control_left.png');
+}
+
+.scRightSide
+{
+  background-image: url('/sitecore/shell/themes/standard/images/pageeditor/bg_move_control_right.png');
+}
+
+.scLeftPart
+{
+  background-position: left center;
+}
+
+.scRightPart
+{
+  background-position: right center;
+}
+
+.scTopPart
+{
+  background-position: center top;
+}
+
+.scBottomPart
+{
+  background-position: center bottom;
+}
+
+div.scTlHoverFrameCorner, div.scTrHoverFrameCorner, div.scBlHoverFrameCorner, div.scBrHoverFrameCorner 
+{
+  width: 4px;
+  height: 4px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.scHoverFrameSideVertical.scTlHoverFrameCorner
+{  
+  background-image: url('/sitecore/shell/themes/standard/images/pageeditor/bg_hover_frame_corner_tl.png');
+}
+
+.scHoverFrameSideVertical.scBlHoverFrameCorner
+{
+  background-repeat: no-repeat;
+  background-image: url('/sitecore/shell/themes/standard/images/pageeditor/bg_hover_frame_corner_bl.png');
+}
+
+.scHoverFrameSideHorizontal.scTrHoverFrameCorner
+{
+  background-repeat: no-repeat;
+  background-image: url('/sitecore/shell/themes/standard/images/pageeditor/bg_hover_frame_corner_tr.png');
+}
+
+.scHoverFrameSideHorizontal.scBrHoverFrameCorner
+{
+  background-repeat: no-repeat;
+  background-image: url('/sitecore/shell/themes/standard/images/pageeditor/bg_hover_frame_corner_br.png');
+}
+
+.scInvisible
+{
+  visibility:hidden;
+}
+/*** END Chrome frames ***/
+
+/*** Chrome types styles ***/
+.scWebEditInput
+{
+  display: inline;
+  outline: none;
+}
+
+.scWebEditInput img
+{
+  outline: none;
+}
+
+.scPageDesignerPlaceholder.visible 
+{
+  cursor: pointer;
+}
+
+.scEmptyPlaceholder 
+{
+  background: transparent url('/sitecore/shell/themes/standard/images/pageeditor/EmptyPlaceholderBg.png') repeat;
+  height: 100px;
+}
+
+.scPageDesignerControl.noPointer, .scPageDesignerPlaceholder.noPointer 
+{
+  cursor: default;
+}
+
+/*When editframe or field are no enabled, but design is enbled show cursor*/
+.scPageDesignerControl .scWebEditInput.noPointer, .scPageDesignerControl .scLooseFrameZone.noPointer
+{
+  cursor: pointer;
+}
+ 
+.scPageDesignerControl.noPointer .scWebEditInput.noPointer, .scPageDesignerControl.noPointer .scLooseFrameZone.noPointer
+{
+  cursor: default;
+}
+
+.scPageDesignerControl.noPointer a .scWebEditInput.noPointer, a .scPageDesignerControl.noPointer .scWebEditInput.noPointer
+{
+  cursor: pointer;
+}
+
+.scWebEditInput[contentEditable="true"]
+{
+  cursor: text;  
+}
+
+.scPageDesignerPlaceholder, .scPageDesignerControl, .scLooseFrameZone, .scWebEditInput 
+{
+  cursor: pointer;  
+}
+
+div.scPageDesignerPlaceholder, div.scPageDesignerControl, div.scLooseFrameZone
+{
+  zoom: 1;
+  overflow-y: hidden;  
+}
+
+.scWordContainer
+{
+  margin : 40px 0px;
+  display: inline-block; 
+}
+
+/*** END Chrome types styles ***/
+
+/***Add ot here\Move to here buttons***/
+.scSortingHandle, .scInsertionHandle
+{
+  cursor: pointer; 
+  position: absolute;  
+  color: Black;
+  white-space: nowrap;  
+  font-family: Tahoma;
+  font-size: 11px;
+  line-height: normal;
+  z-index: 9080;
+}
+
+.scInsertioHandleLeft
+{
+  float: left;
+  width: 36px;
+  height: 23px;
+}
+
+.scInsertioHandleLeft.scAddToHere
+{
+  background: transparent url('/sitecore/shell/themes/standard/images/pageeditor/add_to_here_left.png') repeat-x;
+}
+
+.scInsertionHandle:hover .scInsertioHandleLeft.scAddToHere
+{
+  background: transparent url('/sitecore/shell/themes/standard/images/pageeditor/add_to_here_left_hover.png') repeat-x;
+}
+
+.scInsertioHandleLeft.scMoveToHere
+{
+  background: transparent url('/sitecore/shell/themes/standard/images/pageeditor/move_to_here_left.png') repeat-x;
+}
+
+.scSortingHandle:hover .scInsertioHandleLeft.scMoveToHere
+{
+  background: transparent url('/sitecore/shell/themes/standard/images/pageeditor/move_to_here_left_hover.png') repeat-x;
+}
+
+.scInsertioHandleCenter
+{
+  background: transparent url('/sitecore/shell/themes/standard/images/pageeditor/move_to_here_center.png') repeat-x;
+  float: left;
+  height: 11px;
+  padding-top: 3px;
+  padding-bottom: 9px;
+}
+
+.scSortingHandle:hover .scInsertioHandleCenter, .scInsertionHandle:hover .scInsertioHandleCenter
+{
+  background: transparent url('/sitecore/shell/themes/standard/images/pageeditor/move_to_here_center_hover.png') repeat-x;
+}
+
+.scInsertioHandleCenter span
+{
+  font-family: Tahoma,Verdana,Sans-Serif;
+  font-size: 11px;
+  color: #181818;  
+  position: relative;
+  left: -10px;
+}
+
+.scInsertioHandleRight
+{
+  background: transparent url('/sitecore/shell/themes/standard/images/pageeditor/move_to_here_right.png') no-repeat;
+  float: left;
+  width: 4px;
+  height: 23px;  
+}
+
+.scSortingHandle:hover .scInsertioHandleRight, .scInsertionHandle:hover .scInsertioHandleRight
+{
+  background: transparent url('/sitecore/shell/themes/standard/images/pageeditor/move_to_here_right_hover.png') repeat-x;
+}
+
+/***END Add ot here\Move to here buttons***/
+
+/* START CloningInfo */
+.scChromeText b
+{
+color:red;
+}
+/* END CloningInfo */
