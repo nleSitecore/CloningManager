@@ -6,7 +6,7 @@ using Sitecore.Data.Items;
 
 namespace SharedSource.CloningManager.Data
 {
-    public class CloningItem //: BaseItem
+    public class CloningItem 
     {
         private Item _item;
         public CloningItem(Item item)

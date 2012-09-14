@@ -3,6 +3,8 @@
 .\Debug\Web.Debug.config
 .\Debug\Web.Release.config
 .\Debug\App_Config\Include\CloningManager.config
+.\Debug\App_Config\Include\Sitecore.WebDAV.config
+.\Debug\bin\ComponentArt.UIFramework.lic
 .\Debug\bin\ComponentArt.Web.UI.dll
 .\Debug\bin\HedgehogDevelopment.SitecoreProject.Service.dll
 .\Debug\bin\HtmlAgilityPack.dll
@@ -15,11 +17,10 @@
 .\Debug\bin\RadSpell.Net2.dll
 .\Debug\bin\Sitecore.Analytics.dll
 .\Debug\bin\Sitecore.Client.dll
-.\Debug\bin\Sitecore.Client.xml
+.\Debug\bin\Sitecore.Client.XML
 .\Debug\bin\Sitecore.Kernel.dll
 .\Debug\bin\Sitecore.Kernel.xml
 .\Debug\bin\Sitecore.Logging.dll
-.\Debug\bin\sitecore.modules.poll.dll
 .\Debug\bin\sitecore.nexus.dll
 .\Debug\bin\Sitecore.NVelocity.dll
 .\Debug\bin\Sitecore.Oracle.dll

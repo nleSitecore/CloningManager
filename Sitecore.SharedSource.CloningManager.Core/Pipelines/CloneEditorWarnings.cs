@@ -17,7 +17,7 @@ namespace SharedSource.CloningManager.Pipelines
             Item item = args.Item;
             Assert.ArgumentNotNull(item, "item");
             if (Util.HasClones(item))
-                args.Add(Translate.Text("this item has cloned items"), GetCloneList(item).ToString() + Translate.Text("switch to cloning manager"));
+                args.Add(Translate.Text("this item has cloned items"), GetCloneList(item).ToString());
             else if (item.IsItemClone)
             {
                 Item originalItem = item.Source;
@@ -45,23 +45,23 @@ namespace SharedSource.CloningManager.Pipelines
             foreach (Item clone in clones)
             {
                 strbuilder.Append("<li>");
-                strbuilder.Append(String.Format("<a onclick=\"javascript:return scForm.postEvent(this,event,'item:load(id={0},la={1},vs={2})')\" href=\"#\" style=\"font-style:italic;\">Click here to see Clone: {3}.</a>",clone.ID.ToString(), clone.Name, clone.Version, clone.Name));                
+                strbuilder.Append(String.Format("<a onclick=\"javascript:return scForm.postEvent(this,event,'item:load(id={0},la={1},vs={2})')\" href=\"#\" style=\"font-style:italic;\">Click here to see Clone: {3}.</a>",clone.ID.ToString(), clone.Name, clone.Version, clone.Paths.FullPath));                
                 strbuilder.Append("</li>");
             }
             strbuilder.Append("</ul>");
             return strbuilder;
         }
 
-        private void Test(GetContentEditorWarningsArgs args, Item item, Item originalItem)
-        {
-            List<Sitecore.Data.Clones.Notification> list = new List<Sitecore.Data.Clones.Notification>(item.Database.NotificationProvider.GetNotifications(item));
-            list.AddRange(this.GetAdditionalNotifications(item));
-            int num = 5;
-            for (int i = 0; i < ((num > list.Count) ? list.Count : num); i++)
-            {
-                list[i].RegisterWarnings(args, item);
-            }            
-        }
+        //private void Test(GetContentEditorWarningsArgs args, Item item, Item originalItem)
+        //{
+        //    List<Sitecore.Data.Clones.Notification> list = new List<Sitecore.Data.Clones.Notification>(item.Database.NotificationProvider.GetNotifications(item));
+        //    list.AddRange(this.GetAdditionalNotifications(item));
+        //    int num = 5;
+        //    for (int i = 0; i < ((num > list.Count) ? list.Count : num); i++)
+        //    {
+        //        list[i].RegisterWarnings(args, item);
+        //    }            
+        //}
 
         
 

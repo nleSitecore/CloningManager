@@ -7,7 +7,7 @@
     <ProjectGuid>{c40e436a-a87b-4321-812c-8a1d02938b88}</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <SourceWebPhysicalPath>..\Website</SourceWebPhysicalPath>
-    <SourceWebProject>{dddd2060-579a-48f0-9e6b-34239343d0bb}|Website\Sitecore.SharedSource.CloningManager.csproj</SourceWebProject>
+    <SourceWebProject>{ba665ea1-946f-4f10-9ab4-17b93809ba02}|Website\Sitecore.SharedSource.CloningManager.csproj</SourceWebProject>
     <SourceWebVirtualPath>/Sitecore.SharedSource.CloningManager.csproj</SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
@@ -25,8 +25,8 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder>C:\inetpub\wwwroot\sitecore641\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://sitecore641.local.com</SitecoreWebUrl>
+    <SitecoreDeployFolder>C:\inetpub\wwwroot\CloningManager\Website</SitecoreDeployFolder>
+    <SitecoreWebUrl>http://cloningmanager.local.com</SitecoreWebUrl>
     <SitecoreAccessGuid>ec7b3a09-042b-49ee-bfad-e18b4e2dc011</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
   </PropertyGroup>
