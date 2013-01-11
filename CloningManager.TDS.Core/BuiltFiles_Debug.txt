@@ -1,4 +1,4 @@
-.\Debug\sitecore modules\Shell\Cloning Manager\Controls\CloningInfo.aspx
+.\Debug\sitecore modules\Shell\Cloning Manager\CloningInfo.aspx
 .\Debug\Web.config
 .\Debug\Web.Debug.config
 .\Debug\Web.Release.config

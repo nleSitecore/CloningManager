@@ -38,6 +38,7 @@
       <HintPath>..\Website\lib\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -50,10 +51,16 @@
     <Compile Include="Commands\AutoAdopt.cs" />
     <Compile Include="Commands\ManagerViewer.cs" />
     <Compile Include="Commands\OnOriginalSave.cs" />
+    <Compile Include="Commands\OpenAdoptionItem.cs" />
     <Compile Include="Commands\RejectAdoption.cs" />
+    <Compile Include="Configuration\Settings.cs" />
     <Compile Include="Data\CloningItem.cs" />
     <Compile Include="EventHandler\ItemEventHandler.cs" />
     <Compile Include="Pipelines\CloningInfo.cs" />
+    <Compile Include="Security\AdoptionAccessRight.cs" />
+    <Compile Include="Security\AdoptionAuthorizationHelper.cs" />
+    <Compile Include="Security\AdoptionAuthorizationProvider.cs" />
+    <Compile Include="Security\AdoptionRights.cs" />
     <Compile Include="Util.cs" />
     <Compile Include="Pipelines\CloneEditorWarnings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

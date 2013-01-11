@@ -18,10 +18,8 @@ namespace SharedSource.CloningManager.Commands
             {
                 Item item = context.Items[0];
 
-                item.Editing.BeginEdit();
-                Sitecore.Data.Fields.CheckboxField chkAdopt = item.Fields["AdoptFromOriginal"];
-                chkAdopt.Checked = false;
-                item.Editing.EndEdit();
+                AdoptionManager adoptionManager = new AdoptionManager(item);
+                adoptionManager.UndoAdoption();
             }
         }
         public override CommandState QueryState(CommandContext context)

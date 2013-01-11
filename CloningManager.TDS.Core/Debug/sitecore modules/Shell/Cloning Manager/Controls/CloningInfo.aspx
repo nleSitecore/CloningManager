@@ -9,7 +9,8 @@
 
 <script src="~/sitecore/shell/controls/Gecko.js" type="text/javascript"></script>
 <script src="~/sitecore/shell/controls/Sitecore.js" type="text/javascript"></script>
-<script src="~/sitecore/shell/controls/lib/prototype/prototype.js" type="text/javascript"></script>
+<script src="~/sitecore/shell/controls/lib/prototype/prototype.js" type="text/javascript"></script>
+
     <script language="javascript" type="text/javascript">
         function onClose() {            
             window.close();
@@ -45,6 +46,7 @@
         </td>
         <td>Item Path</td>
         <td>Inherit from Version</td>
+        <td>Fields in Clone changed</td>
         <//thead>   
         <asp:PlaceHolder ID="pl" runat="server"></asp:PlaceHolder>
         </table>
@@ -56,6 +58,7 @@
             <td><asp:HyperLink ID="HyperLink1" runat="server"><%#Eval("Paths.FullPath") %></asp:HyperLink></td>            
             <td>
                 <asp:Label ID="Label1" runat="server" Text=""></asp:Label></td>               
+                 <td><asp:Label ID="lbChangedFields" runat="server" Text=""></asp:Label></td>   
             </tr>
         </ItemTemplate>
         <AlternatingItemTemplate>
@@ -65,6 +68,7 @@
             <td><asp:HyperLink ID="HyperLink1" runat="server"><%#Eval("Paths.FullPath") %></asp:HyperLink></td>            
             <td>
                 <asp:Label ID="Label1" runat="server" Text=""></asp:Label></td>               
+                <td><asp:Label ID="lbChangedFields" runat="server" Text=""></asp:Label></td>               
             </tr>
         </AlternatingItemTemplate>
         
