@@ -73,7 +73,7 @@ namespace SharedSource.CloningManager
                         }
                     }
                     //ToDO if (!SharedSource.CloningManager.Configuration.Settings.DisableAdoptionChangeRight)
-                    SetSecurity();
+                    //SetSecurity();
                 }
             }
         }
@@ -87,7 +87,7 @@ namespace SharedSource.CloningManager
                 chkAdopt.Checked = false;
                 _item.Editing.EndEdit();
                 //ToDO if (!SharedSource.CloningManager.Configuration.Settings.DisableAdoptionChangeRight)
-                RemoveSecurity();
+                //RemoveSecurity();
             }
         }
 
